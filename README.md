@@ -1,16 +1,36 @@
-# tranquilty
+# 💬 Tranquilty Chat App
 
-A new Flutter project.
+Tranquilty is a simple and clean real-time chat application that allows two users to communicate instantly.  
+The app focuses on fast messaging, smooth UI, and a lightweight experience built entirely with **Flutter**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📥 APK Download
 
-A few resources to get you started if this is your first Flutter project:
+Click the link below to download the latest release:  
+➡️ **[Download APK](https://drive.google.com/file/d/1Ng2EE44phOT4hjGretT4J-p74DixnKn6/view?usp=sharing)**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🎥 Demo Video
+
+Watch a full demo of the application here:  
+➡️ \*\*[Demo Video](# 💬 Tranquilty Chat App
+
+Tranquilty is a simple and clean real-time chat application that allows two users to communicate instantly.  
+The app focuses on fast messaging, smooth UI, and a lightweight experience built entirely with **Flutter**.
+
+---
+
+## 📥 APK Download
+
+Click the link below to download the latest release:  
+➡️ **[Download APK](PUT_APK_LINK_HERE)**
+
+---
+
+## 🎥 Demo Video
+
+Watch a full demo of the application here:  
+➡️ **[Demo Video](https://youtu.be/GpD_My18bW4)**
+)\*\*
