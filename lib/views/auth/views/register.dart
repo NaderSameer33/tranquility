@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../core/logic/helper_method.dart';
 import '../../../core/ui/app_button.dart';
-import '../../../core/ui/app_image.dart';
 import '../../../core/ui/app_input.dart';
 import '../../../core/ui/app_login_or_signin.dart';
-import 'login.dart';
 import '../widgets/register_upload_image.dart';
 
 class RegisterView extends StatelessWidget {
@@ -36,10 +33,7 @@ class RegisterView extends StatelessWidget {
               AppInput(
                 hintText: 'Age',
               ),
-              AppInput(
-                hintText: 'Gender',
-                suffexIcon: 'arrow_bottom.svg',
-              ),
+
               AppInput(
                 hintText: 'Passwred',
                 isPasswrod: true,

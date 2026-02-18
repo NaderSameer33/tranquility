@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tranquilty/core/ui/app_input.dart';
 import 'core/logic/helper_method.dart';
-import 'views/auth/views/create_password.dart';
-import 'views/home/views/home.dart';
 import 'views/splash.dart';
 
 void main() {
@@ -22,20 +21,7 @@ class Tranqulity extends StatelessWidget {
         debugShowCheckedModeBanner: false,
 
         theme: ThemeData(
-          inputDecorationTheme: InputDecorationTheme(
-            filled: true,
-            fillColor: Color(0xff284243).withValues(alpha: .3),
-            isDense: true,
-            hintStyle: TextStyle(
-              color: Colors.black,
-              fontSize: 16,
-              fontWeight: FontWeight.w400,
-            ),
-
-            border: buildBorder(),
-            focusedBorder: buildBorder(),
-            enabledBorder: buildBorder(),
-          ),
+        
           textButtonTheme: TextButtonThemeData(
             style: TextButton.styleFrom(
               foregroundColor: Color(0xff284243),
@@ -58,15 +44,6 @@ class Tranqulity extends StatelessWidget {
         ),
         home: SplashView(),
         navigatorKey: navKey,
-      ),
-    );
-  }
-
-  OutlineInputBorder buildBorder() {
-    return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(8),
-      borderSide: BorderSide(
-        color: Color(0xff284243).withValues(alpha: .29),
       ),
     );
   }

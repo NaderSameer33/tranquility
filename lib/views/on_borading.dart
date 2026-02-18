@@ -12,6 +12,8 @@ class OnBoradingView extends StatefulWidget {
 }
 
 class _OnBoradingViewState extends State<OnBoradingView> {
+  final pageController = PageController();
+
   final _list = [
     _Model(
       'onborading_1.jpg',
@@ -34,6 +36,7 @@ class _OnBoradingViewState extends State<OnBoradingView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView.builder(
+        controller: pageController,
         onPageChanged: (value) {
           currentIndex = value;
           setState(() {});
@@ -42,6 +45,7 @@ class _OnBoradingViewState extends State<OnBoradingView> {
 
         itemBuilder: (context, index) {
           return _Item(
+            pageController: pageController,
             model: _list[index],
             index: currentIndex,
           );
@@ -52,9 +56,14 @@ class _OnBoradingViewState extends State<OnBoradingView> {
 }
 
 class _Item extends StatelessWidget {
-  const _Item({required this.model, required this.index});
+  const _Item({
+    required this.model,
+    required this.index,
+    required this.pageController,
+  });
   final _Model model;
   final int index;
+  final PageController pageController;
 
   @override
   Widget build(BuildContext context) {
@@ -112,7 +121,16 @@ class _Item extends StatelessWidget {
                   CircleAvatar(
                     backgroundColor: Color(0xff284243),
                     child: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        if (index != 2) {
+                          pageController.nextPage(
+                            duration: Duration(milliseconds: 350),
+                            curve: Curves.linear,
+                          );
+                        } else {
+                          goTo(page: LoginView(), canPop: false);
+                        }
+                      },
                       icon: AppImage(image: 'arrow.svg'),
                     ),
                   ),

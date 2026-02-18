@@ -8,18 +8,18 @@ class AppImage extends StatelessWidget {
     this.height,
     this.width,
     this.fit = BoxFit.scaleDown,
-    this.color 
+    this.color,
   });
   final String image;
   final double? height, width;
   final BoxFit fit;
-  final Color ?color ; 
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
     if (image.toLowerCase().endsWith('svg')) {
       return SvgPicture.asset(
-        'assets/svg/$image',
+        'assets/icons/$image',
         height: height,
         width: width,
         fit: fit,
